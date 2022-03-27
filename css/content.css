@@ -12,12 +12,15 @@
     display: grid;
     background-color: #d6d6d6;
     grid-template-rows: 80% 20%;
+    
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+
     box-shadow: 5px 3px 8px rgba(128, 128, 128, 0.418);
+    
     transition: .1s;
     -webkit-transition: .1s;
     -moz-transition: .1s;
@@ -26,6 +29,7 @@
 }
 .article:hover{
     transition: .1s;
+    box-shadow: 8px 10px 10px rgba(128, 128, 128, 0.418);
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);

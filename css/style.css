@@ -68,7 +68,7 @@ body {
 }
 
 .btn:hover{
-    box-shadow: 0 8px #2F84C3;
+    box-shadow: -4px 8px #2F84C3;
 }
 .btn:active{
     box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.25);

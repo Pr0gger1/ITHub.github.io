@@ -2,6 +2,7 @@ footer{
     background-color: #303b44;
     color: white;
     font-weight: 300;
+    height: 265px;
 }
 footer .logo a{
     width: 30%;
@@ -49,6 +50,7 @@ footer .logo{
     height: 32px;
 
     margin-right: 5px;
+    margin-bottom: 10px;
 }
 
 .grid{
