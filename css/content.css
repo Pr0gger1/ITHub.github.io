@@ -1,8 +1,5 @@
-
 .articles{
-    margin-top: 45px;
-}
-.articles{
+    margin-top: 2.9em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
@@ -44,8 +41,8 @@
     background-color: #e6e6e6;
     padding: 10px;
     display: grid;
-    grid-template-areas: "title title title"
-                        "date empty tags";
+    grid-template-areas: "title title title title"
+                        "date empty empty tags";
 
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -71,4 +68,6 @@
     grid-area: tags;
     display: inline-block;
     vertical-align: middle;
+
+    color: rgb(79, 129, 236);
 }

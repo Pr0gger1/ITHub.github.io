@@ -68,7 +68,24 @@ body {
 }
 
 .btn:hover{
-    box-shadow: -4px 8px #2F84C3;
+    box-shadow: -1px 1px #2F84C3,
+    -2px 2px #2F84C3,
+    -3px 3px #2F84C3,
+    -4px 4px #2F84C3,
+    -5px 5px #2F84C3,
+    -6px 6px #2F84C3;
+    /* 2px 2px #2F84C3,
+    3px 3px #2F84C3, */
+    /* 4px 4px #2F84C3, */
+    /* 5px 5px #2F84C3, */
+    /* 6px 6px #2F84C3; */
+    /* 7px 7px #2F84C3; */
+    
+    transform: translateX(7px);
+    -webkit-transform: translateX(7px);
+    -moz-transform: translateX(7px);
+    -ms-transform: translateX(7px);
+    -o-transform: translateX(7px);
 }
 .btn:active{
     box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.25);
