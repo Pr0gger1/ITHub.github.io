@@ -1,4 +1,5 @@
 footer{
+    grid-area: f;
     background-color: #303b44;
     color: white;
     font-weight: 300;
@@ -45,12 +46,63 @@ footer .logo{
     margin-bottom: 0.6em;
 }
 
-.social .social-btn img{
+/* .social .social-btn img{
     width: 32px;
     height: 32px;
 
     margin-right: 5px;
     margin-bottom: 10px;
+} */
+
+.social {
+    display: flex;
+    justify-content: center;
+     width: 150px; 
+     height: 50px;
+}
+
+ .social .social-btn {
+    display: inline-block; 
+    /* margin-right: 5px; */
+    /* margin-bottom: 10px;  */
+    font-size: 0;
+    
+} 
+
+.social-btn-vk {
+    background-image: url('../img/social-media/VK.png');
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    transition: 0.3s;
+}
+
+.social-btn-vk:hover {
+    background-image: url('../img/social-media/vk-32.png');
+    transition: 0.5s;
+}
+
+.social-btn-tg {
+    background-image: url('../img/social-media/Telegram 1.png');
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    transition: 0.3s;
+}
+
+.social-btn-tg:hover {
+    background-image: url('../img/social-media/TG.png');
+    transition: 0.5s;
+}
+
+.social-btn-git {
+    background-image: url('../img/social-media/GitHub.png');
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    transition: 0.3s;
+}
+
+.social-btn-git:hover {
+    background-image: url('../img/social-media/logo_github_icon_143196.png');
+    transition: 0.5s;
 }
 
 .grid{

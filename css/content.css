@@ -71,3 +71,9 @@
 
     color: rgb(79, 129, 236);
 }
+.capture i {
+    color: rgba(0, 0, 0, 0.671);
+    margin-right: 5px;
+    font-size: 1.1em;
+    vertical-align: middle;
+}

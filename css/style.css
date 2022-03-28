@@ -16,7 +16,10 @@ body {
 }
 .wrapper{
     display: grid;
-    grid-template-rows: 75% 25%;
+    grid-template-areas: "c c c c c"
+                        "c c c c c"
+                        "f f f f f";
+    /* grid-template-rows: 75% 25%; */
 }
 .container{
     padding: 25px;
@@ -30,6 +33,7 @@ body {
     -o-border-radius: 5px;
 }
 .content{
+    grid-area: c;
     margin-top: 110px;
     /* margin-top: 130px; */
     margin-bottom: 65px;
