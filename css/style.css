@@ -15,37 +15,9 @@ body {
     color:#000;
 }
 .wrapper{
-    display: grid;
-    grid-template-areas: "c c c c c"
-                        "c c c c c"
-                        "f f f f f";
-    /* grid-template-rows: 75% 25%; */
-}
-.container{
-    padding: 25px;
-
-    margin: 0 25px;
-    background-color: white;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-.content{
-    grid-area: c;
-    margin-top: 110px;
-    /* margin-top: 130px; */
-    margin-bottom: 65px;
-}
-.content #title-page{
-    margin: 0;
-    font-weight: 600;
-    line-height: 1.5em;
-    font-size: 2em;
-}
-.content #comment-page{
-    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .btn{

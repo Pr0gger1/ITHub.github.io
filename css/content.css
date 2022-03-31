@@ -1,3 +1,41 @@
+.container{
+    padding: 25px;
+    margin: 0 25px;
+
+    background-color: white;
+
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+.content{
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+.content #title-page{
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.5em;
+    font-size: 2em;
+}
+.content #comment-page{
+    font-size: 1.2em;
+}
+
+.info-block{
+    display: flex;
+    justify-content: space-between;
+}
+#date-now{
+    align-self: center;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
 .articles{
     margin-top: 2.9em;
     display: grid;
