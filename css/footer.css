@@ -1,14 +1,16 @@
 footer{
-    grid-area: f;
     background-color: #303b44;
     color: white;
     font-weight: 300;
-    height: 265px;
+    padding-bottom: 280px;
+    
 }
+
 footer .logo a{
-    width: 30%;
+    width: 230px;
     height: 70px;
     margin-bottom: 25px;
+    text-align: center;
 }
 footer .logo > .logo-capture{
     font-size: 21px;
@@ -17,7 +19,7 @@ footer .logo > .logo-capture{
 
     margin-bottom: 20px;
 }
-footer .logo > .copyright{
+.copyright{
     font-size: 18px;
     opacity: 0.7;
 }  
@@ -27,10 +29,10 @@ footer .logo{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .subscribe p{
-    width: 85%;
 
     font-weight: 300;
     font-size: 1.2em;
@@ -45,77 +47,111 @@ footer .logo{
 .subscribe #e-mail{
     margin-bottom: 0.6em;
 }
-
-/* .social .social-btn img{
-    width: 32px;
-    height: 32px;
-
-    margin-right: 5px;
-    margin-bottom: 10px;
-} */
-
-.social {
+#e-mail::placeholder {
+    text-align: center;
+}
+rect, path{
+    transition: fill 0.2s ease;
+}
+.social{
     display: flex;
     justify-content: center;
-     width: 150px; 
-     height: 50px;
+    align-items: center;
 }
-
- .social .social-btn {
-    display: inline-block; 
-    /* margin-right: 5px; */
-    /* margin-bottom: 10px;  */
-    font-size: 0;
-    
-} 
-
-.social-btn-vk {
-    background-image: url('../img/social-media/VK.png');
-    background-repeat: no-repeat;
-    background-size: 32px 32px;
-    transition: 0.3s;
+.social__item{
+    display: block;
+    width: 32px;
+    height: 32px;
+    max-height: 32px;
+    max-width: 32px;
+    margin-right: 15px;
 }
-
-.social-btn-vk:hover {
-    background-image: url('../img/social-media/vk-32.png');
-    transition: 0.5s;
+.social__item--vk:hover .cls-1{
+    fill: #D79090;
 }
-
-.social-btn-tg {
-    background-image: url('../img/social-media/Telegram 1.png');
-    background-repeat: no-repeat;
-    background-size: 32px 32px;
-    transition: 0.3s;
+.social__item--tg:hover .st0{
+    fill: #D79090;
 }
-
-.social-btn-tg:hover {
-    background-image: url('../img/social-media/TG.png');
-    transition: 0.5s;
+.social__item--git:hover path{
+    fill: #D79090;
 }
-
-.social-btn-git {
-    background-image: url('../img/social-media/GitHub.png');
-    background-repeat: no-repeat;
-    background-size: 32px 32px;
-    transition: 0.3s;
+.social__item:last-child{
+    margin-right: 0;
 }
-
-.social-btn-git:hover {
-    background-image: url('../img/social-media/logo_github_icon_143196.png');
-    transition: 0.5s;
+.social__item svg {
+    display: block;
+    width: 32px;
+    height: 32px;
 }
-
 .grid{
     display: grid;
     box-sizing: border-box;
 
-    padding-top: 30px;
-    padding-bottom: 15px;
-    
-    grid-template-columns: 1fr 2fr 1fr;
+    padding: 10px 15px 10px 15px;
+    grid-template-columns: 1fr minmax(380px, 2fr) 1fr;
 }
-
+.subscribe{
+    padding-top: 35px;
+}
+.subscribe__item{
+   display: block;
+   max-width: 350px;
+}
 .subscribe #e-mail::placeholder {
     font-weight: 300;
     opacity: 0.6;
+}
+@media(max-width: 767px){
+    .grid{
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "logo"
+            "form"
+            "contacts";
+    }
+    .first{
+        display: none;
+    }
+    .logo__pic{
+        grid-area: logo;
+        margin: 0 auto;
+    }
+    .logo{
+        grid-area: contacts;
+    }
+    .subscribe{
+        grid-area: form;
+        align-items: center;
+        padding-bottom: 45px;
+        padding-top: 15px;
+    }
+    .social__item{
+        width: 50px;
+        height: 50px;
+        max-width: 50px;
+        max-height: 50px;
+        margin-right: 25px;
+    }
+    .social__item:last-child{
+        margin-right: 0;
+    }
+    .social__item svg {
+        width: 50px;
+        height: 50px;
+    }
+}
+@media(max-width: 400px){
+    .copyright{
+        font-size: 16px;
+       
+    }
+    .subscribe p{
+        font-size: 18px;
+    }
+    input[type="email"]{
+        max-width: 290px;
+    }
+    .btn.blue{
+        max-width: 290px;
+    }
 }
