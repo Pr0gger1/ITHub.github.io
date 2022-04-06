@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Название документа</title>
+    <link rel="stylesheet" href="css/modal.css" type="text/css">
+  </head>
+ 
+  <body>
+    <div class="modal" id="modalWin">
+      <div class="popup-form">
+            <form action="" method="get" class="window">
+                <h1 class="ContactUs">Есть жалобы,<br> предложения или пожелания?<br> <b>Свяжитесь с нами.</b></h1>
+                <input type="text" placeholder="Ваше имя" id="name" class="form">
+                <input type="text" placeholder="Ваш email" id="email" class="form">
+                <p class="info">Эти данные нужны нам для того, чтобы мы смогли ответить на Ваш отзыв</p>
+                <textarea name="congratulations" id="congrat" cols="50" rows="10" placeholder="Ваши пожелания" ></textarea>
+                <div class="submit-btn">
+                  <input type="submit" value="Отправить" class="form">
+                </div>
+                <p class="contacts">Контакты для коммерческих предложений: <br> <b>commercial@ithub.com</b> <br> <b>+7 428 642 47-85</b></p>
+            </form>
+      </div>
+      <div class="overlay" data-easy-toggle="#modalWin" data-easy-class="show"></div>
+ `  </div>
+
+    <!-- <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+   var modalButtons = document.querySelectorAll('.js-open-modal'),
+       overlay      = document.querySelector('#overlay-modal'),
+       closeButtons = document.querySelector('.js-modal-close');
+   
+   
+   modalButtons.forEach(function(item){
+      
+      item.addEventListener('click', function(e) {
+         
+         e.preventDefault();
+         var modalId = this.getAttribute('data-modal'),
+             modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
+         
+         modalElem.classList.add('active');
+         overlay.classList.add('active');
+      }); // end click
+   }); // end foreach
+}); // end ready -->
+
+<!-- //       /**
+//  * EasyToggler 1.2.0
+//  * Simple class switcher on web elements. JavaScript only.
+//  * GitHub: https://github.com/rah-emil/easy-toggler
+//  *
+//  * Copyright 2020 Rah Emil
+//  *
+//  * Released under the MIT License
+//  *
+//  * Released: July 21, 2020
+//  * Latest updates: July 21, 2021
+//  */
+
+// !function(){"use strict";document.addEventListener("click",function(t){const e=t.target.closest("[data-easy-toggle]");if(e){t.preventDefault();let a=e.getAttribute("data-easy-toggle"),s=e.getAttribute("data-easy-class");try{document.querySelectorAll("[data-easy-toggle]").forEach(t=>{t.hasAttribute("data-easy-parallel")||t===e||document.querySelector(t.getAttribute("data-easy-toggle")).classList.remove(t.getAttribute("data-easy-class"))}),document.querySelector(a).classList.toggle(s)}catch(t){console.warn("EasyToggler.js : Блок "+a+" не существует")}}if(!e){let e=document.querySelectorAll("[data-easy-rcoe]");Array.from(e).forEach.call(e,function(e){let a=e.getAttribute("data-easy-toggle"),s=e.getAttribute("data-easy-class");if(!t.target.closest(a))try{document.querySelector(a).classList.remove(s)}catch(t){console.warn("EasyToggler.js : Блок "+a+" не существует")}})}})}();
+    </script> -->
+  </body>
+</html>
