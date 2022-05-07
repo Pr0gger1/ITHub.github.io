@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'icons';
+  src:  url('../fonts/icons.eot?hyg8ix');
+  src:  url('../fonts/icons.eot?hyg8ix#iefix') format('embedded-opentype'),
+    url('../fonts/icons.ttf?hyg8ix') format('truetype'),
+    url('../fonts/icons.woff?hyg8ix') format('woff'),
+    url('../fonts/icons.svg?hyg8ix#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-time:before {
+  content: "\e900";
+}
+.icon-heart:before {
+  content: "\e901";
+}
+.icon-mail:before {
+  content: "\e902";
+}
+.icon-search:before {
+  content: "\e903";
+}
+.icon-send:before {
+  content: "\e904";
+}
+.icon-arrow-left:before {
+  content: "\e905";
+}
+.icon-arrow-right:before {
+  content: "\e906";
+}
+.icon-tag:before {
+  content: "\e907";
+}

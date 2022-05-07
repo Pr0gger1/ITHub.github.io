@@ -1,0 +1,32 @@
+#search-result-l{
+    font-weight: 800;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+#no-result{
+    font-size: 20px;
+}
+#exist-search{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+@media (max-width: 640px){
+    #search-result-l{
+        font-size: 28px;
+    }
+    #no-result{
+        text-align: center;
+        font-size: 18px;
+    }
+}
+@media (max-width: 485px){
+    #exist-search{
+        font-size: 20px;
+        text-align: center;
+    }
+    #search-result-l{
+        font-size: 20px;
+        text-align: center;
+        line-height: 2em;
+    }
+}
